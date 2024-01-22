@@ -41,27 +41,27 @@ function TopStudents() {
 
       const data = [
         {
-          name: `Amit Jha`,
+          name: `React JS`,
           img: `https://unsplash.com/photos/_kd5cxwZOK4/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzB8fHN0dWRlbnRzfGVufDB8fHx8MTcwMjk5ODMwOXww&force=true&w=1920`,
           review: `Some review submitted by the user about the company.`
         },
         {
-          name: `Amit Jha`,
+          name: `React JS`,
           img: `https://unsplash.com/photos/_kd5cxwZOK4/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzB8fHN0dWRlbnRzfGVufDB8fHx8MTcwMjk5ODMwOXww&force=true&w=1920`,
           review: `Some review submitted by the user about the company.`
         },
         {
-          name: `Amit Jha`,
+          name: `React JS`,
           img: `https://unsplash.com/photos/_kd5cxwZOK4/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzB8fHN0dWRlbnRzfGVufDB8fHx8MTcwMjk5ODMwOXww&force=true&w=1920`,
           review: `Some review submitted by the user about the company.`
         },
         {
-          name: `Amit Jha`,
+          name: `React JS`,
           img: `https://unsplash.com/photos/_kd5cxwZOK4/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzB8fHN0dWRlbnRzfGVufDB8fHx8MTcwMjk5ODMwOXww&force=true&w=1920`,
           review: `Some review submitted by the user about the company..`
         },
         {
-          name: `Amit Jha`,
+          name: `React JS`,
           img: `https://unsplash.com/photos/_kd5cxwZOK4/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzB8fHN0dWRlbnRzfGVufDB8fHx8MTcwMjk5ODMwOXww&force=true&w=1920`,
           review: `Some review submitted by the user about the company.`
         },

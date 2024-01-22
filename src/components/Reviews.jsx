@@ -15,7 +15,7 @@ function Reviews() {
         />
       </div>
       <div>
-        <h4 className="font-bold">Amit Jha<div className='h-1 w-3/4 bg-slate-950 mb-2'></div></h4>
+        <h4 className="font-bold">React JS<div className='h-1 w-3/4 bg-slate-950 mb-2'></div></h4>
        <p className="text-sm text-gray-500">Some review submitted by the user about the company</p>
       </div>
     </div>
@@ -30,7 +30,7 @@ function Reviews() {
         />
       </div>
       <div>
-        <h4 className="font-bold">Amit Jha <div className='h-1 w-3/4 bg-slate-950 mb-2'></div></h4>
+        <h4 className="font-bold">React JS <div className='h-1 w-3/4 bg-slate-950 mb-2'></div></h4>
         <p className="text-sm text-gray-500">Some review submitted by the user about the company</p>
       </div>
     </div>
@@ -45,7 +45,7 @@ function Reviews() {
         />
       </div>
       <div>
-        <h4 className="font-bold">Amit Jha <div className='h-1 w-3/4 bg-slate-950 mb-2'></div></h4>
+        <h4 className="font-bold">React JS <div className='h-1 w-3/4 bg-slate-950 mb-2'></div></h4>
         <p className="text-sm text-gray-500">Some review submitted by the user about the company</p>
       </div>
     </div>

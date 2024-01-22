@@ -26,7 +26,7 @@ function Dashboard() {
         </div>
         <div className="flex items-center mb-4">
           {/* <div className="w-1/3">Email:</div> */}
-          <div className="w-2/3 font-semibold"> {user.email || "amit.jha6700@gmail.com"}</div>
+          <div className="w-2/3 font-semibold"> {user.email || "React18@gmail.com"}</div>
         </div>
         <div className="flex justify-start">
           <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
