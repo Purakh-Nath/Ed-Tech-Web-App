@@ -22,7 +22,7 @@ function Dashboard() {
 
         <div className="flex items-center mb-4">
           {/* <div className="w-1/3">Contact:</div> */}
-          <div className="w-2/3 font-semibold">+91774690033</div>
+          <div className="w-2/3 font-semibold">{user.contact ||"+919876543210"} </div>
         </div>
         <div className="flex items-center mb-4">
           {/* <div className="w-1/3">Email:</div> */}

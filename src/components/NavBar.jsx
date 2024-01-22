@@ -11,6 +11,7 @@ import UserContext from "../context/UserContext";
 
 function NavBar() {
   const [nav, setNav] = useState(false);
+  const isSmooth = true;
   let menuRef = useRef();
   useEffect(() => {
     let handler = (e) => {
@@ -43,27 +44,27 @@ function NavBar() {
       <ul className="hidden md:flex  cursor-pointer">
         <li className="p-4 whitespace-nowrap bg-black rounded">
           {" "}
-          <NavLink to="/" smooth duration={500}>
+          <NavLink to="/" smooth={isSmooth.toString()} duration={500}>
           JOIN US
           </NavLink>{" "}
         </li>
         <li className="p-4">
-          <NavLink to="/classes" smooth duration={500}>
+          <NavLink to="/classes" smooth={isSmooth.toString()} duration={500}>
             Classes
           </NavLink>
         </li>
         <li className="p-4">
-          <NavLink to="/products" smooth duration={500}>
+          <NavLink to="/products" smooth={isSmooth.toString()} duration={500}>
             Products
           </NavLink>
         </li>
         <li className="p-4 whitespace-nowrap">
-          <NavLink to="/about" smooth duration={500}>
+          <NavLink to="/about" smooth={isSmooth.toString()} duration={500}>
              About Us
           </NavLink>
         </li>
         <li className="p-4">
-          <NavLink to="/login" smooth duration={500}>
+          <NavLink to="/login" smooth={isSmooth.toString()} duration={500}>
           <FaUser size={20}/>
           </NavLink>
         </li>
@@ -96,32 +97,32 @@ function NavBar() {
         </h1>
         <li className="p-4 border-b border-gray-600">
           {" "}
-          <NavLink to="/" smooth duration={500}>
+          <NavLink to="/" smooth={isSmooth.toString()} duration={500}>
             JOIN US
           </NavLink>
         </li>
         <li className="p-4 border-b border-gray-600">
-          <NavLink to="/classes" smooth duration={500}>
+          <NavLink to="/classes" smooth={isSmooth.toString()} duration={500}>
             Classes
           </NavLink>
         </li>
         <li className="p-4 border-b border-gray-600">
-          <NavLink to="/products" smooth duration={500}>
+          <NavLink to="/products" smooth={isSmooth.toString()} duration={500}>
             Products
           </NavLink>
         </li>
         <li className="p-4 border-b border-gray-600">
-          <NavLink to="/about" smooth duration={500}>
+          <NavLink to="/about" smooth={isSmooth.toString()} duration={500}>
             About Us
           </NavLink>
         </li>
         <li className="p-4">
-          <NavLink to="/login" smooth duration={500}>
+          <NavLink to="/login" smooth={isSmooth.toString()} duration={500}>
           <FaUser size={20}/>
           </NavLink>
         </li>
         <li className="p-4">
-          <NavLink to="Insight" smooth duration={500}>
+          <NavLink to="Insight" smooth={isSmooth.toString()} duration={500}>
           <FaShoppingCart size={20}/>
           </NavLink>
         </li>

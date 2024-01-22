@@ -7,10 +7,11 @@ import UserContext from '../context/UserContext';
 function SignUp() {
   const [usernameSign,setUsernameSign] = useState('')
   const [email,setEmail] = useState('')
+  const [contact,setContact] = useState('')
   const {setUser} = useContext(UserContext)
   const handleSubmit = (e) =>{
     e.preventDefault()
-    setUser({usernameSign,email})
+    setUser({usernameSign,email,contact})
   
   }
   const {user} = useContext(UserContext)
@@ -40,6 +41,8 @@ function SignUp() {
           <input
             type="tel"
             placeholder="PHONE NUMBER"
+            value={contact}
+              onChange={ (e) => setContact(e.target.value)}
             className="w-3/4 h-16 rounded-lg border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 font-bold"
           />
         </div>
