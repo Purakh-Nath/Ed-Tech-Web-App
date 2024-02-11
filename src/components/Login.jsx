@@ -2,8 +2,8 @@ import React, { useState ,useContext} from 'react'
 import { NavLink } from "react-router-dom";
 import UserContext from '../context/UserContext';
 function Login() {
-  const [username,setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [username,setUsername] = useState()
+  const [password, setPassword] = useState()
   
   const {setUser} = useContext(UserContext)
   const handleSubmit = (e) =>{
@@ -18,22 +18,21 @@ function Login() {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="w-full max-w-md px-8 py-6 rounded-lg shadow-md bg-white">
         {/* Form */}
-        <div className="space-y-4">
+        <div className="space-y-4">  
           <div>
             <label htmlFor="username" className="text-sm font-medium text-gray-700">
-            {/* Branch Testing */}
-              USER__Name
+             USERNAME
             </label>
             <input
               required
               type="text"
               id="username"
               name="username"
-              placeholder='Context'
+              placeholder='Enter your username...'
               value={username}
               onChange={ (e) => setUsername(e.target.value)}
               className="px-4 py-2 rounded-lg border border-gray-300 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-            />
+            ></input>
           </div>
           <div>
             <label htmlFor="password" className="text-sm font-medium text-gray-700">
@@ -47,7 +46,7 @@ function Login() {
               value={password}
               onChange={ (e) => setPassword(e.target.value)}
               className="px-4 py-2 rounded-lg border border-gray-300 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-            />
+            ></input>
           </div>
             <button onClick={handleSubmit} 
             type="submit"
