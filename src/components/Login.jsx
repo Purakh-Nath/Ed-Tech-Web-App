@@ -22,7 +22,7 @@ function Login() {
           <div>
             <label htmlFor="username" className="text-sm font-medium text-gray-700">
             {/* Branch Testing */}
-              USERNAME
+              USER__Name
             </label>
             <input
               required
