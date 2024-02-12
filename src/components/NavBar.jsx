@@ -42,33 +42,33 @@ function NavBar() {
     >
       <h1 className="w-full text-3xl font-bold text-amber-100 pl-7"> <NavLink to="/">KARO ABHAYAAS</NavLink></h1>
       <ul className="hidden md:flex  cursor-pointer">
-        <li className="p-4 whitespace-nowrap bg-black rounded">
+        <li className="p-4 whitespace-nowrap hover:bg-[#FC766AFF] rounded-md font-bold">
           {" "}
           <NavLink to="/" smooth={isSmooth.toString()} duration={500}>
           JOIN US
           </NavLink>{" "}
         </li>
-        <li className="p-4">
+        <li className="p-4  hover:bg-[#FC766AFF] rounded-md">
           <NavLink to="/classes" smooth={isSmooth.toString()} duration={500}>
             Classes
           </NavLink>
         </li>
-        <li className="p-4">
+        <li className="p-4 hover:bg-[#FC766AFF] rounded">
           <NavLink to="/products" smooth={isSmooth.toString()} duration={500}>
             Products
           </NavLink>
         </li>
-        <li className="p-4 whitespace-nowrap">
+        <li className="p-4 whitespace-nowrap hover:bg-[#FC766AFF] rounded">
           <NavLink to="/about" smooth={isSmooth.toString()} duration={500}>
              About Us
           </NavLink>
         </li>
-        <li className="p-4">
+        <li className="p-4 hover:bg-[#FC766AFF] rounded">
           <NavLink to="/login" smooth={isSmooth.toString()} duration={500}>
           <FaUser size={20}/>
           </NavLink>
         </li>
-        <li className="p-4">
+        <li className="p-4 hover:bg-[#FC766AFF] rounded">
 
         {user ? (
   <NavLink to="/check"> <FaShoppingCart size={20}/> </NavLink>

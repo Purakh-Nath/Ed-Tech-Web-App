@@ -69,13 +69,13 @@ function TopStudents() {
       ];
 
   return (
-    <div className='w-3/4 m-auto' >
-    <h2 className='text-white  text-center font-extralight pt-10'>Top Students</h2>
+    <div className='w-3/4 m-auto gap-x-10' >
+    <h2 className='text-white   text-center font-extrabold text-lg space-x-2'>Top Students</h2>
       <div className="mt-20 px-2 gap-5">
       <Slider {...settings}>
         {data.map((d) => (
-          <div key={d.name} className="bg-slate-700  text-white h-[450px] gap-5 rounded-xl px-4"> 
-            <div className='h-56  bg-[#F2F2F2] flex justify-center  gap-5 items-center rounded-t-xl  px-2'>
+          <div key={d.name} className="bg-slate-700  text-white h-[450px] gap-12 rounded-xl px-4 space-x-3"> 
+            <div className='h-56  bg-[#F2F2F2] flex justify-center  gap-5 items-center rounded-t-xl  px-2 space-x-4'>
               <img src={d.img} alt="" className="h-44 w-44 rounded-full gap-5"/>
             </div>
 
@@ -88,7 +88,6 @@ function TopStudents() {
         ))}
       </Slider>
       </div>
-      <h2 className='text-white  text-center font-bold  mt-10'>Reviews</h2>
     </div>
   )
 }
