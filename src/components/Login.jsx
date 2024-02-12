@@ -1,14 +1,17 @@
 import React, { useState ,useContext} from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import UserContext from '../context/UserContext';
 function Login() {
   const [username,setUsername] = useState()
   const [password, setPassword] = useState()
+  const navigate = useNavigate();
+
   
   const {setUser} = useContext(UserContext)
   const handleSubmit = (e) =>{
     e.preventDefault()
     setUser({username,password})
+    navigate("/dashboard");
   
   }
   const {user} = useContext(UserContext)
@@ -17,7 +20,10 @@ function Login() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="w-full max-w-md px-8 py-6 rounded-lg shadow-md bg-white">
-        {/* Form */}
+       <form 
+         className="flex flex-col w-full max-w-md mx-auto"
+        onSubmit={handleSubmit}
+       >
         <div className="space-y-4">  
           <div>
             <label htmlFor="username" className="text-sm font-medium text-gray-700">
@@ -48,15 +54,13 @@ function Login() {
               className="px-4 py-2 rounded-lg border border-gray-300 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
             ></input>
           </div>
-            <button onClick={handleSubmit} 
-            type="submit"
+            <button 
             className="inline-flex items-center px-4 py-2 ml-36 rounded-lg bg-black text-white font-bold focus:ring focus:ring-blue-700 focus:ring-opacity-50 mx-auto"
-          >  
-{/* {user ? (<NavLink to="/dashboard">Login</NavLink>) : (<div className='mx-6 text-start'>Please Login</div>)} */}
-         <NavLink to="/dashboard">LOGIN </NavLink>
+          >
+       LOGIN 
             
           </button>    
-        </div>
+        </div> </form>
         {/* Sign Up link */}
         <p className="mt-4 text-center text-sm text-gray-500">
           Don't have an account?{" "}
