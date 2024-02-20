@@ -10,6 +10,7 @@ import UserContext from "../context/UserContext";
 
 
 function NavBar() {
+  const [activeNavItem, setActiveNavItem] = useState('');
   const [nav, setNav] = useState(false);
   const isSmooth = true;
   let menuRef = useRef();
@@ -40,30 +41,30 @@ function NavBar() {
       name="home"
       className="flex justify-between items-center h-24 max-w-[1240px] mx-auto  text-white bg-slate-800 min-w-full"
     >
-      <h1 className="w-full text-3xl font-bold text-amber-100 pl-7"> <NavLink to="/">KARO ABHAYAAS</NavLink></h1>
+      <h1 className="w-full text-3xl font-bold pl-7"> <NavLink to="/" className={`${activeNavItem === 'join-us' ? 'text-amber-100' : activeNavItem === 'classes' ? 'text-blue-500' : activeNavItem === 'products' ? 'text-[#F0E68C]' : activeNavItem === 'about' ? 'text-[#002CFF]': activeNavItem === 'check' ? 'text-[#FFD300]' : activeNavItem === 'user' ? 'text-[#35DB24]' : 'text-[#35DB24]'}`}>ED.TECH</NavLink></h1>
       <ul className="hidden md:flex  cursor-pointer">
         <li className="p-4 whitespace-nowrap hover:bg-[#FC766AFF] rounded-md font-bold">
           {" "}
-          <NavLink to="/" smooth={isSmooth.toString()} duration={500}>
+          <NavLink to="/" smooth={isSmooth.toString()} duration={500} onClick={() => setActiveNavItem('join-us')}>
           JOIN US
           </NavLink>{" "}
         </li>
-        <li className="p-4  hover:bg-[#FC766AFF] rounded-md">
-          <NavLink to="/classes" smooth={isSmooth.toString()} duration={500}>
+        <li className="p-4  hover:bg-[#FC766AFF] rounded-md"  onClick={() => setActiveNavItem('classes')}>
+          <NavLink to="/classes" smooth={isSmooth.toString()} duration={500} >
             Classes
           </NavLink>
         </li>
-        <li className="p-4 hover:bg-[#FC766AFF] rounded">
+        <li className="p-4 hover:bg-[#FC766AFF] rounded" onClick={() => setActiveNavItem('products')}>
           <NavLink to="/products" smooth={isSmooth.toString()} duration={500}>
             Products
           </NavLink>
         </li>
-        <li className="p-4 whitespace-nowrap hover:bg-[#FC766AFF] rounded">
+        <li className="p-4 whitespace-nowrap hover:bg-[#FC766AFF] rounded" onClick={() => setActiveNavItem('about')}>
           <NavLink to="/about" smooth={isSmooth.toString()} duration={500}>
              About Us
           </NavLink>
         </li>
-        <li className="p-4 hover:bg-[#FC766AFF] rounded">
+        <li className="p-4 hover:bg-[#FC766AFF] rounded" onClick={() => setActiveNavItem('user')}>
           <NavLink to="/login" smooth={isSmooth.toString()} duration={500}>
           <FaUser size={20}/>
           </NavLink>
@@ -71,7 +72,7 @@ function NavBar() {
         <li className="p-4 hover:bg-[#FC766AFF] rounded">
 
         {user ? (
-  <NavLink to="/check"> <FaShoppingCart size={20}/> </NavLink>
+  <NavLink to="/check" onClick={() => setActiveNavItem('check')}> <FaShoppingCart size={20}/> </NavLink>
 ) : (
   <div>  <FaShoppingCart size={20}/> </div>
 )}
