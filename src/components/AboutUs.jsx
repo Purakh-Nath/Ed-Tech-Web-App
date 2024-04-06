@@ -28,14 +28,14 @@ const AboutUs = ({details1, details2,details3 }) => {
       {/* Section 1 */}
       <div className="flex flex-row">
         <div className="flex-1">
-          <img src={details1.image} alt="Image 1" className="rounded-md shadow-md w-full h-full object-cover  sm:w-3/4  sm:h-3/4 p-14" />
+          <img src={details1.image} alt="Image 1" className=" shadow-md w-full h-full   sm:w-3/4  sm:h-3/4 rounded-lg" />
         </div>
         <div className="flex-1 px-4 py-2 space-y-4">
           <h3 className="text-lg font-bold text-white mb-1 pt-12">{details1.title}</h3>
-          <h3 className="text-black text-lg font-bold">{details1.description}</h3>
+          <h3 className="text-blue-600 text-lg font-bold">{details1.description}</h3>
           <ul className="list-disc space-y-2 p-4">
             {details1.features.map((feature) => (
-              <li key={feature} className="text-gray-900">
+              <li key={feature} className="text-gray-900 font-bold">
                 {feature}
               </li>
             ))}
@@ -46,14 +46,14 @@ const AboutUs = ({details1, details2,details3 }) => {
       {/* Section 2 */}
       <div className="flex flex-row-reverse">
         <div className="flex-1">
-          <img src={details2.image} alt="Image 2" className="rounded-md shadow-md  p-14 w-full h-full object-cover  sm:w-3/4  sm:h-3/4" />
+          <img src={details2.image} alt="Image 2" className=" rounded-lg shadow-md  w-full h-full  sm:w-3/4  sm:h-3/4" />
         </div>
         <div className="flex-1 px-4 py-2 space-y-4 pt-4">
           <h3 className="text-lg font-bold text-white mb-1 pt-16">{details2.title}</h3>
-          <p className="text-black text-lg font-bold "> {details2.description}</p>
+          <p className="text-blue-600 text-lg font-bold "> {details2.description}</p>
           <ul className="list-disc space-y-2 p-4">
             {details2.features.map((feature) => (
-              <li key={feature} className="text-gray-700">
+              <li key={feature} className="text-gray-900 font-bold">
                 {feature}
               </li>
             ))}
@@ -64,14 +64,14 @@ const AboutUs = ({details1, details2,details3 }) => {
       {/* Section 3 */}
       <div className="flex flex-row">
         <div className="flex-1">
-          <img src={details3.image} alt="Image 3" className="rounded-md shadow-md w-full h-full object-cover  sm:w-3/4  sm:h-3/4 p-14" />
+          <img src={details3.image} alt="Image 3" className="rounded-lg shadow-md w-full h-full   sm:w-3/4  sm:h-3/4" />
         </div>
         <div className="flex-1 px-4 py-2 space-y-4 pt-16">
           <h3 className="text-lg font-bold text-white mb-1">{details3.title}</h3>
-          <p className="text-black text-lg font-bold">{details3.description}</p>
+          <p className="text-blue-600 text-lg font-bold">{details3.description}</p>
           <ul className="list-disc space-y-2 p-4">
             {details3.features.map((feature) => (
-              <li key={feature} className="text-gray-700">
+              <li key={feature} className="text-gray-900 font-bold">
                 {feature}
               </li>
             ))}

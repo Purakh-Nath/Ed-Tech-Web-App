@@ -33,12 +33,12 @@ const Products = ({ product }) => {
     <div className="flex flex-row">
 
       <div className="flex-1 h-full mr-4">
-        <img src='https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?cs=srgb&dl=pexels-pixabay-256381.jpg&fm=jpg&w=1280&h=852&_gl=1*g1q74i*_ga*MTk2MTM3MzY4Mi4xNzAzMDQ4MTE2*_ga_8JE65Q40S6*MTcwMzA2NDA0Ni4zLjEuMTcwMzA2NDExNC4wLjAuMA..' alt="" className="object-cover object-center w-3/4 h-full  shadow-md p-4 ml-14 rounded" />
+        <img src='https://unsplash.com/photos/o0Qqw21-0NI/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEyNDIxNDA3fA&force=true&w=1920' alt="" className="object-cover object-center w-3/4 h-full  shadow-md  ml-14 rounded-3xl mt-5" />
       </div>
       <div className="flex-1 px-4 py-2 space-y-4">
-        <h3 className="text-lg font-bold text-gray-700 mb-1">Cozy Knit Sweater</h3>
-        <p className="text-black font-semibold">Stay warm and comfortable in this ultra-soft knit sweater, perfect for fall evenings.</p>
-        <br /><span className="font-bold text-gray-900">₹1500</span>
+        <h3 className="text-lg font-bold text-red-600 mb-1 mt-6">"The Alchemist" by Paulo Coelho</h3>
+        <p className="text-black font-bold text-xl">A timeless tale about following your dreams and finding your true purpose in life. It's a story of self-discovery and the journey towards fulfilling one's destiny.</p>
+        <br /><span className="font-bold text-gray-900">₹500</span>
         <div className="flex items-center space-x-2">
           <button
             type="button"
@@ -72,12 +72,12 @@ const Products = ({ product }) => {
     <div className="flex flex-row">
 
 <div className="flex-1 h-full mr-4">
-  <img src='https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?cs=srgb&dl=pexels-pixabay-256381.jpg&fm=jpg&w=1280&h=852&_gl=1*g1q74i*_ga*MTk2MTM3MzY4Mi4xNzAzMDQ4MTE2*_ga_8JE65Q40S6*MTcwMzA2NDA0Ni4zLjEuMTcwMzA2NDExNC4wLjAuMA..' alt="" className="object-cover object-center w-3/4 h-full  shadow-md p-4 ml-14 rounded" />
+  <img src='https://unsplash.com/photos/D4YrzSwyIEc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjN8fGJvb2tzfGVufDB8fHx8MTcxMjQwMDU0NXww&force=true&w=1920' alt="" className="object-cover object-center w-3/4 h-full mt-5  shadow-md  ml-14 rounded-3xl" />
 </div>
 <div className="flex-1 px-4 py-2 space-y-4">
-  <h3 className="text-lg font-bold text-gray-700 mb-1">Cozy Knit Sweater</h3>
-  <p className="text-black font-semibold">Stay warm and comfortable in this ultra-soft knit sweater, perfect for fall evenings.</p>
-  <br /><span className="font-bold text-gray-900">₹1500</span>
+  <h3 className="text-lg font-bold text-red-600 mb-1 mt-6">"The Great Gatsby" by F. Scott Fitzgerald</h3>
+  <p className="text-black font-bold text-xl">Set in the 1920s, this novel explores the decadence and disillusionment of the American Dream through the eyes of Jay Gatsby, a wealthy and enigmatic figure.</p>
+  <br /><span className="font-bold text-gray-900">₹700</span>
   <div className="flex items-center space-x-2">
     <button
       type="button"
@@ -110,12 +110,12 @@ const Products = ({ product }) => {
 <div className="flex flex-row">
 
 <div className="flex-1 h-full mr-4">
-  <img src='https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?cs=srgb&dl=pexels-pixabay-256381.jpg&fm=jpg&w=1280&h=852&_gl=1*g1q74i*_ga*MTk2MTM3MzY4Mi4xNzAzMDQ4MTE2*_ga_8JE65Q40S6*MTcwMzA2NDA0Ni4zLjEuMTcwMzA2NDExNC4wLjAuMA..' alt="" className="object-cover object-center w-3/4 h-full  shadow-md p-4 ml-14 rounded" />
+  <img src='https://unsplash.com/photos/9BoqXzEeQqM/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEyNDIxMjg1fA&force=true&w=1920' alt="" className="object-cover object-center w-3/4 h-full  shadow-md mt-5 ml-14 rounded-3xl" />
 </div>
 <div className="flex-1 px-4 py-2 space-y-4">
-  <h3 className="text-lg font-bold text-gray-700 mb-1">Cozy Knit Sweater</h3>
-  <p className="text-black font-semibold">Stay warm and comfortable in this ultra-soft knit sweater, perfect for fall evenings.</p>
-  <br /><span className="font-bold text-gray-900">₹1500</span>
+  <h3 className="text-lg font-bold text-red-600 mb-1 mt-6">"Thinking, Fast and Slow" by Daniel Kahneman</h3>
+  <p className="text-black font-bold text-xl">Kahneman, a Nobel Prize-winning psychologist, explores the two systems that drive the way we think: the fast, intuitive system and the slow, deliberate system.</p>
+  <br /><span className="font-bold text-gray-900">₹600</span>
   <div className="flex items-center space-x-2">
     <button
       type="button"
